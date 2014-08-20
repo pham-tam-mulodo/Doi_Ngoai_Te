@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var labelStatus: UILabel!
     
     // true: convert VND -> YEN, false: convert YEN -> VND
-    var change: Bool = true;
+    var change: Bool = false;
     
     // 1YEN = 207.98 VND
     let exchange: Int = 208
@@ -68,6 +68,10 @@ class ViewController: UIViewController {
     @IBAction func clearNumber(UIButton){
         inputNumber.text = "0"
         answerNumber.text = "0"
+    }
+    
+    @IBAction func deleteNumber(){
+        inputNumber.text = inputNumber.text.substringToIndex(inputNumber.text.endIndex.predecessor())
     }
 
 }
