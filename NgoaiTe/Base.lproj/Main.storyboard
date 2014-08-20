@@ -54,11 +54,11 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9O-SW-lOj">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="change">
+                                <state key="normal" title="Change">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="249" y="198" width="51" height="32"/>
+                                    <rect key="frame" x="244" y="198" width="56" height="32"/>
                                 </variation>
                                 <connections>
                                     <action selector="changeTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TUz-8r-0do"/>

@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     var change: Bool = true;
     
     // 1YEN = 207.98 VND
-    let exchange: Float = 207.98
+    let exchange: Int = 208
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,19 +45,24 @@ class ViewController: UIViewController {
         }else{
             labelStatus.text = "YEN -> VND"
         }
-        inputNumber.text = answerNumber.text
+        let newString = answerNumber.text.stringByReplacingOccurrencesOfString(",", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        inputNumber.text = newString
         pressEnter(theButton)
     }
     
     @IBAction func pressEnter(UIButton){
-        var equal: Float = 0
+        var equal: Int = 0
         if(change == true){
-            equal = round((inputNumber.text as NSString).floatValue / exchange)
+            equal = inputNumber.text.toInt()! / exchange
         }else{
-            equal = round((inputNumber.text as NSString).floatValue * exchange)
+            equal = inputNumber.text.toInt()! * exchange
         }
         
-        answerNumber.text = "\(equal)"
+        var numberFormatter: NSNumberFormatter = NSNumberFormatter()
+        numberFormatter.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        numberFormatter.formatterBehavior = NSNumberFormatterBehavior.BehaviorDefault
+    
+        answerNumber.text = numberFormatter.stringFromNumber(equal)
     }
     
     @IBAction func clearNumber(UIButton){
