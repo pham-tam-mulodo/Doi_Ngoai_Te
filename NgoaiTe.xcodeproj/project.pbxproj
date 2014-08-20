@@ -11,7 +11,6 @@
 		C7CDE5A9198F5B8E006EB560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDE5A8198F5B8E006EB560 /* ViewController.swift */; };
 		C7CDE5AC198F5B8E006EB560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7CDE5AA198F5B8E006EB560 /* Main.storyboard */; };
 		C7CDE5AE198F5B8E006EB560 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7CDE5AD198F5B8E006EB560 /* Images.xcassets */; };
-		C7CDE5BA198F5B8E006EB560 /* NgoaiTeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CDE5B9198F5B8E006EB560 /* NgoaiTeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +31,6 @@
 		C7CDE5AB198F5B8E006EB560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7CDE5AD198F5B8E006EB560 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C7CDE5B3198F5B8E006EB560 /* NgoaiTeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NgoaiTeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7CDE5B8198F5B8E006EB560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C7CDE5B9198F5B8E006EB560 /* NgoaiTeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NgoaiTeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				C7CDE5A3198F5B8E006EB560 /* NgoaiTe */,
-				C7CDE5B6198F5B8E006EB560 /* NgoaiTeTests */,
 				C7CDE5A2198F5B8E006EB560 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,23 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				C7CDE5A5198F5B8E006EB560 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C7CDE5B6198F5B8E006EB560 /* NgoaiTeTests */ = {
-			isa = PBXGroup;
-			children = (
-				C7CDE5B9198F5B8E006EB560 /* NgoaiTeTests.swift */,
-				C7CDE5B7198F5B8E006EB560 /* Supporting Files */,
-			);
-			path = NgoaiTeTests;
-			sourceTree = "<group>";
-		};
-		C7CDE5B7198F5B8E006EB560 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C7CDE5B8198F5B8E006EB560 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -217,7 +196,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7CDE5BA198F5B8E006EB560 /* NgoaiTeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +306,7 @@
 				INFOPLIST_FILE = NgoaiTe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -339,6 +318,7 @@
 				INFOPLIST_FILE = NgoaiTe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -395,6 +375,7 @@
 				C7CDE5BF198F5B8E006EB560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7CDE5C0198F5B8E006EB560 /* Build configuration list for PBXNativeTarget "NgoaiTeTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +384,7 @@
 				C7CDE5C2198F5B8E006EB560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
